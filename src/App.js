@@ -1,9 +1,7 @@
 import LoginPage from "./pages/Login/LoginPage";
 import UserPage from "./pages/User/UserPage";
 import AdminPage from "./pages/Admin/AdminPage";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { Routes, Route, Link, NavLin } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 
 function App() {
   return (

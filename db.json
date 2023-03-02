@@ -3,45 +3,70 @@
     {
       "id": 1,
       "title": "json-server",
-      "author": "typicode",
-      "display" : true
+      "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır. Şu anda birçok masaüstü yayıncılık paketi ve web sayfa düzenleyicisi, varsayılan mıgır metinler olarak Lore",
+      "time": "15.12.1999",
+      "display": true,
+      "owner": "ahmet"
     },
     {
       "id": 2,
       "title": "json-server",
-      "author": "typicode",
-      "display" : true
+      "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır. Şu anda birçok masaüstü yayıncılık paketi ve web sayfa düzenleyicisi, varsayılan mıgır metinler olarak Lore",
+      "time": "15.12.1999",
+      "display": true,
+      "owner": "ahmet"
     },
     {
       "id": 3,
       "title": "json-server",
-      "author": "typicode","display" : true
+      "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır. Şu anda birçok masaüstü yayıncılık paketi ve web sayfa düzenleyicisi, varsayılan mıgır metinler olarak Lore",
+      "time": "15.12.1999",
+      "display": true,
+      "owner": "ahmet"
     },
     {
       "id": 4,
       "title": "json-server",
-      "author": "typicode","display" : true
+      "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır. Şu anda birçok masaüstü yayıncılık paketi ve web sayfa düzenleyicisi, varsayılan mıgır metinler olarak Lore",
+      "time": "15.12.1999",
+      "display": true,
+      "owner": "ali"
     },
     {
       "id": 5,
       "title": "json-server",
-      "author": "typicode","display" : true
+      "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır. Şu anda birçok masaüstü yayıncılık paketi ve web sayfa düzenleyicisi, varsayılan mıgır metinler olarak Lore",
+      "time": "15.12.1999",
+      "display": true,
+      "owner": "murat"
+    },{
+      "id": 6,
+      "title": "json-server",
+      "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır. Şu anda birçok masaüstü yayıncılık paketi ve web sayfa düzenleyicisi, varsayılan mıgır metinler olarak Lore",
+      "time": "15.12.1999",
+      "display": true,
+      "owner": "murat"
     }
   ],
 
   "users": [
     {
       "id": 1,
+      "username": "ahmet",
       "email": "test@gmail.com",
       "password": "123123",
       "admin": false
-    },{
+    },
+    {
       "id": 2,
+      "username": "ali",
       "email": "test1@gmail.com",
       "password": "123123",
       "admin": true
-    },{
+    },
+    {
       "id": 3,
+      "username": "murat",
       "email": "test2@gmail.com",
       "password": "123123",
       "admin": false

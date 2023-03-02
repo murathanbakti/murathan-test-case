@@ -22,8 +22,10 @@ const LoginPage = () => {
           toast.success("giris yapildi");
 
           if (resp[0].admin == true) {
-            navigate("/admin");
+            localStorage.setItem("user", JSON.stringify(resp[0]));
+            navigate("/admin" );
           } else {
+            localStorage.setItem("user", JSON.stringify(resp[0]));
             navigate("/user");
           }
         }
