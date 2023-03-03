@@ -39,7 +39,8 @@
       "time": "15.12.1999",
       "display": true,
       "owner": "murat"
-    },{
+    },
+    {
       "id": 6,
       "title": "json-server",
       "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır. Şu anda birçok masaüstü yayıncılık paketi ve web sayfa düzenleyicisi, varsayılan mıgır metinler olarak Lore",
