@@ -26,7 +26,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.container {
+.userContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,10 +61,10 @@ a {
   padding: 20px;
 }
 
-.todoList h1 {
+.todoList h2 {
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .card {
   display: flex;
@@ -102,9 +102,10 @@ a {
 .delete {
   position: absolute;
   right: 5px;
-  top: -15px;
+  top: 5px;
 }
 .addTask {
+  margin: 25px 0 0 0 ;
   padding: 10px 20px;
   font-size: 30px;
   color: white;

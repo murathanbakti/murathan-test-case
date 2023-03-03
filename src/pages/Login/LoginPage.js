@@ -38,7 +38,7 @@ const LoginPage = () => {
   console.log(email);
   console.log(password);
   return (
-    <div className="container">
+    <div className="loginContainer">
       <form onSubmit={ProceedLogin}>
         <img
           src="https://media.licdn.com/dms/image/C4D0BAQHy0Cw2-NWQmg/company-logo_200_200/0/1668176759649?e=2147483647&v=beta&t=oAF8npdK0DIH61Omx1wFcQWMDwMxzld9xsZ7MyWSmLg"

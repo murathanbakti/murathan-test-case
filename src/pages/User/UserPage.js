@@ -30,8 +30,13 @@ const UserPage = () => {
     handleTask();
   }, [sendReq]);
   console.log(data);
-  const setTask = () => {
-    navigate("/set-task");
+  const setTask = (e) => {
+    console.log(e);
+    navigate("/set-task", {
+      state: {
+        taskId: e,
+      },
+    });
   };
   const handleDelete = async (e) => {
     const deleteData = {
@@ -67,20 +72,23 @@ const UserPage = () => {
         </>
       ) : (
         <div className="loginUser">
-          <div class="container">
+          <div class="userContainer">
             <div className="todoList">
               <h3 className="userName">Kullanıcı: {currentUser.username}</h3>
-              <h1>Todo List</h1>
+              <h2>Todo List</h2>
               {!data ? (
                 <></>
               ) : (
-                <div className="container">
+                <div className="userContainer">
                   {data.map((e) => {
                     if (e.display === true) {
                       return (
                         <div className="card">
                           <div className="delete">
-                            <IconButton onClick={setTask} size="small">
+                            <IconButton
+                              onClick={() => setTask(e.id)}
+                              size="small"
+                            >
                               <ModeEditIcon fontSize="inherit" />
                             </IconButton>
                             <IconButton

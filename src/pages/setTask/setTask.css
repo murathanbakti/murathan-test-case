@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.containerr {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.setTask {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 45vw;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+.setTask h3 {
+  margin-top: 25px;
+  font-size: 25px;
+}
+.endTimeContainer {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+.endTimeContainer input {
+  padding: 2px;
+  width: 6vw;
+  border-radius: 5px;
+}
+.titleContainer {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  width: 15vw;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+.titleContainer input {
+  margin: 10px 0 0 0;
+  padding: 3px;
+  border-radius: 3px;
+  box-shadow: 0 1px 12px 0 rgba(31, 38, 135, 0.5);
+  font-size: 15px;
+  text-align: center;
+}
+.descContainer {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  width: 100%;
+  margin-top: 30px;
+  width: 25vw;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+.descContainer textarea {
+  margin: 10px 0 0 0;
+  padding: 10px;
+  box-sizing: border-box;
+
+  border-radius: 5px;
+  border: 2px solid black;
+  font-size: 15px;
+  box-shadow: 0 1px 12px 0 rgba(31, 38, 135, 0.5);
+}
+.setTask button {
+  margin: 15px 0 0 0;
+  background-color: green;
+  padding: 5px 100px;
+  font-size: 16px;
+  border-radius: 10px;
+}
