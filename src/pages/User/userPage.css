@@ -5,14 +5,27 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+.navigateHome {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+.loginUser {
   position: relative;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .container {
   display: flex;
   align-items: center;
@@ -76,15 +89,20 @@ body {
 }
 .endTime {
   position: absolute;
-  right: 5px;
-  top: 5px;
+  left: 8px;
+  top: 12px;
   font-weight: 300;
-  font-size: 10px;
+  font-size: 11px;
   color: aliceblue;
   border: 1px solid #0c8712;
   background-color: #0c8712;
   padding: 3px;
   border-radius: 10px;
+}
+.delete {
+  position: absolute;
+  right: 5px;
+  top: -15px;
 }
 .addTask {
   padding: 10px 20px;
