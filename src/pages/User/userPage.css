@@ -5,33 +5,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-.navigateHome {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-a {
-  text-decoration: none;
-  color: blue;
-}
-
-.loginUser {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .userContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 0 400px;
+  margin: 25px 400px;
   min-width: 500px;
   max-width: 1000px;
   background: rgba(255, 255, 255, 0.15);

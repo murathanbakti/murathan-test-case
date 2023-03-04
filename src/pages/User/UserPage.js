@@ -59,7 +59,7 @@ const UserPage = () => {
       {!currentUser ? (
         <></>
       ) : (
-        <div className="loginUser">
+        <div >
           <div class="userContainer">
             <div className="todoList">
               <h3 className="userName">Kullanıcı: {currentUser.username}</h3>

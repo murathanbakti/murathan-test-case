@@ -30,7 +30,7 @@
       "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. ",
       "time": "1999-12-15",
       "display": true,
-      "owner": "ali"
+      "owner": "ahmet"
     },
     {
       "id": 5,
@@ -38,10 +38,26 @@
       "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. ",
       "time": "1999-12-15",
       "display": true,
-      "owner": "murat"
+      "owner": "ahmet"
     },
     {
       "id": 6,
+      "title": "json-server",
+      "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. ",
+      "time": "1999-12-15",
+      "display": true,
+      "owner": "murat"
+    },
+    {
+      "id": 7,
+      "title": "json-server",
+      "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. ",
+      "time": "1999-12-15",
+      "display": true,
+      "owner": "murat"
+    },
+    {
+      "id": 8,
       "title": "json-server",
       "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. ",
       "time": "1999-12-15",
