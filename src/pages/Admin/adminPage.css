@@ -27,7 +27,7 @@
   padding: 20px;
   position: relative;
 }
-.deletedCardTitle{
+.deletedCardTitle {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 15px;
@@ -43,8 +43,10 @@
   font-weight: 300;
   font-size: 11px;
   color: aliceblue;
-  border: 1px solid  rgba(211, 47, 47, 0.8);
-  background-color:  rgba(211, 47, 47, 0.8);
+  border: 1px solid rgba(211, 47, 47, 0.8);
+  background-color: rgba(211, 47, 47, 0.8);
   padding: 3px;
   border-radius: 10px;
 }
+
+

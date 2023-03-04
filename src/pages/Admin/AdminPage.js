@@ -8,11 +8,19 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import ModeEditIcon from "@mui/icons-material/ModeEdit";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 const AdminPage = () => {
   const [sendReq, setSendReq] = useState(false);
   const navigate = useNavigate();
+  const currentUser = JSON.parse(localStorage.getItem("user"));
   const { data, loading, error } = useFetch("/tasks", sendReq);
-  console.log(data);
+
+  useEffect(() => {
+    if (currentUser.admin===false) {
+      navigate("/")
+      toast.error('Admin Degilsiniz!')
+    }
+  }, []);
 
   const handleDelete = async (e) => {
     const deleteData = {
@@ -32,6 +40,11 @@ const AdminPage = () => {
         body: JSON.stringify(deleteData),
       });
       setSendReq(!sendReq);
+      if (e.display === true) {
+        toast.error("Görev Silindi!");
+      } else {
+        toast.success("Görev Geri Alındı!");
+      }
     } catch (e) {
       console.error(e);
     }

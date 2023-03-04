@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./setTask.css";
 import Button from "@mui/material/Button";
+import useFetch from "../../hooks/useFetch";
+import { toast } from "react-toastify";
 
 const SetTask = () => {
-  const [data, setData] = useState();
   const [newTime, setNewTime] = useState();
   const [newTitle, setNewTitle] = useState();
   const [newDesc, setNewDesc] = useState();
@@ -12,26 +13,14 @@ const SetTask = () => {
   const taskId = location.state.taskId;
 
   const navigate = useNavigate();
-
+  const { data, loading, error } = useFetch(`/tasks/${taskId}`);
+  console.log(data);
   useEffect(() => {
-    const handleData = async () => {
-      try {
-        await fetch(`http://localhost:3000/tasks/${taskId}`)
-          .then((res) => {
-            return res.json();
-          })
-          .then((resp) => {
-            setData(resp);
-            setNewDesc(resp.desc);
-            setNewTime(resp.time);
-            setNewTitle(resp.title);
-          });
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    handleData();
-  }, []);
+    setNewDesc(data.desc);
+    setNewTime(data.time);
+    setNewTitle(data.title);
+  }, [data]);
+
   const uploadTask = async (e) => {
     const newData = {
       title: newTitle,
@@ -47,7 +36,8 @@ const SetTask = () => {
           "Content-type": "application/json",
         },
         body: JSON.stringify(newData),
-      }).then(navigate("/user"));
+      }).then(navigate(-1));
+      toast.success("Görev Güncellendi!");
     } catch (e) {
       console.error(e);
     }
@@ -58,7 +48,7 @@ const SetTask = () => {
       {!data ? (
         <></>
       ) : (
-        <div className="containerr">
+        <div className="taskContainer">
           <div className="setTask">
             <h3>Taskı Düzenle</h3>
             <div className="endTimeContainer">
@@ -73,14 +63,13 @@ const SetTask = () => {
               <span>Başlık</span>
               <input
                 type="text"
-                Value={newTitle}
+                value={newTitle}
                 onChange={(e) => setNewTitle(e.target.value)}
               />
             </div>
             <div className="descContainer">
               <span>Açıklama</span>
               <textarea
-              rows={20}
                 value={newDesc}
                 onChange={(e) => setNewDesc(e.target.value)}
               />

@@ -2,9 +2,9 @@
   "tasks": [
     {
       "title": "json-serverdasd",
-      "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. ",
+      "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir.  asdjnak",
       "time": "1999-12-15",
-      "display": false,
+      "display": true,
       "owner": "ahmet",
       "id": 1
     },
@@ -12,15 +12,15 @@
       "title": "json-se",
       "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. ",
       "time": "1999-12-29",
-      "display": false,
+      "display": true,
       "owner": "ahmet",
       "id": 2
     },
     {
-      "title": "json-serverddsds",
+      "title": "json-serve",
       "desc": "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. ",
       "time": "1999-12-15",
-      "display": false,
+      "display": true,
       "owner": "ahmet",
       "id": 3
     },
