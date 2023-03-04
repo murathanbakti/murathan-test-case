@@ -56,7 +56,7 @@ a {
   flex-direction: column;
   width: 100%;
   margin-bottom: 20px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.9);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 0, 0.9);
   border-radius: 10px;
   padding: 20px;
 }
@@ -73,11 +73,17 @@ a {
   flex-direction: column;
   background: white;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.9);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 0, 0.9);
   border-radius: 10px;
   margin: 5px 0;
   padding: 20px;
   position: relative;
+  cursor: pointer;
+}
+.card:hover {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .cardTitle {
   font-weight: 600;
@@ -105,12 +111,60 @@ a {
   top: 5px;
 }
 .addTask {
-  margin: 25px 0 0 0 ;
+  margin: 25px 0 0 0;
   padding: 10px 20px;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   background-color: green;
   border: none;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.addTask:hover {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+  }
+}
+@media screen and (max-width: 1300px) {
+  .card {
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 0, 0.2);
+  }
+}
+@media screen and (max-width: 600px) {
+  .loginUser{
+    height: 100%;
+  }
+  .userContainer {
+    min-width: 100%;
+  }
+  .todoList {
+    width: 100%;
+    border: none;
+    margin-bottom: 0;
+  }
+  .userName{
+    position: inherit;
+  }
 }

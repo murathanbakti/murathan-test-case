@@ -85,7 +85,7 @@
   position: absolute;
   bottom: 50px;
   background-color: green;
-  padding: 5px 100px;
+  padding: 5px 50px;
   font-size: 16px;
   border-radius: 10px;
 }
@@ -107,7 +107,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .setTask {
     width: 50%;
     height: 60vw;
@@ -152,17 +152,18 @@
   .descContainer {
     width: 100%;
   }
+  .descContainer textarea {
+    height: 100px;
+  }
   .endTimeContainer {
     position: absolute;
     top: 200px;
   }
-
-  .endTimeContainer input{
+  .endTimeContainer input {
     width: 100%;
   }
-  
   .setTask button {
     padding: 5px 50px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
 }

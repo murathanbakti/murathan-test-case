@@ -5,30 +5,23 @@ import { useNavigate } from "react-router-dom";
 import { IconButton } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import ModeEditIcon from "@mui/icons-material/ModeEdit";
+import useFetch from "../../hooks/useFetch";
 
 const UserPage = () => {
-  const [data, setData] = useState();
   const [sendReq, setSendReq] = useState(true);
   const currentUser = JSON.parse(localStorage.getItem("user"));
   const navigate = useNavigate();
+
   useEffect(() => {
-    const handleTask = async () => {
-      console.log(currentUser);
-      try {
-        await fetch(`http://localhost:3000/tasks?owner=${currentUser.username}`)
-          .then((res) => {
-            return res.json();
-          })
-          .then((resp) => {
-            setData(resp);
-          });
-      } catch (err) {
-        console.log(err);
-        toast.error(err);
-      }
-    };
-    handleTask();
-  }, [sendReq]);
+    if (!currentUser) {
+      navigate("/");
+    }
+  }, []);
+  const { data, loading, error } = useFetch(
+    `/tasks?owner=${currentUser.username}`,
+    sendReq
+  );
+
   console.log(data);
   const setTask = (e) => {
     console.log(e);
@@ -64,12 +57,7 @@ const UserPage = () => {
   return (
     <div>
       {!currentUser ? (
-        <>
-          <div className="navigateHome">
-            <h2>Giris yapiniz</h2>
-            <a href="/">Tıkla</a>
-          </div>
-        </>
+        <></>
       ) : (
         <div className="loginUser">
           <div class="userContainer">
