@@ -5,9 +5,14 @@
   font-family: "Poppins", sans-serif;
 }
 
-.userContainer {
+.loginUser {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.userContainer {
+  display: flex;
   justify-content: center;
   flex-direction: column;
   margin: 25px 400px;
@@ -132,18 +137,19 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .loginUser{
+  .loginUser {
     height: 100%;
   }
   .userContainer {
     min-width: 100%;
+    margin: 0;
   }
   .todoList {
     width: 100%;
     border: none;
     margin-bottom: 0;
   }
-  .userName{
+  .userName {
     position: inherit;
   }
 }
